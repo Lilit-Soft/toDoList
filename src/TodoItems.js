@@ -6,8 +6,13 @@ class TodoItems extends Component {
  
     	this.createItems = this.createItems.bind(this);
   	}
+ 
+  	delete(key) {
+    	this.props.delete(key);
+  	}
 	createItems(item) {
-		return <li key={item.key}>{item.text}</li>
+		return <li 	onClick={() => this.delete(item.key)}
+					key={item.key}>{item.text}</li>
 	}
 	render() {
 		var todoEntries = this.props.entries;
