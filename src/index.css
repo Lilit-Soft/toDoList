@@ -1,0 +1,10 @@
+body {
+  padding: 50px;
+  text-align: center;
+  background-color: #5e6569;
+  font-family: sans-serif;
+}
+#container {
+  display: flex;
+  justify-content: center;
+}
